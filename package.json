@@ -11,7 +11,8 @@
     "clean": "rimraf .next out",
     "lint": "next lint",
     "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --config .prettierrc 'src/**/*.tsx' --write"
   },
   "dependencies": {
     "next": "^12.1.0",

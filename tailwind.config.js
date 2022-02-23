@@ -1,14 +1,10 @@
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
-  mode :"jit", 
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
   theme: {
-    fontSize: {
-
-    },
+    fontSize: {},
     extend: {
-      colors: {
-
-      },
+      colors: {},
     },
   },
   plugins: [],
