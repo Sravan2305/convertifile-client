@@ -1,5 +1,5 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 type IMainProps = {
   meta: ReactNode;

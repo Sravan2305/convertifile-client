@@ -1,8 +1,8 @@
 /* eslint-disable unused-imports/no-unused-vars */
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
-import { Meta } from "@/layout/Meta";
-import { Main } from "@/templates/Main";
+import { Meta } from '@/layout/Meta';
+import { Main } from '@/templates/Main';
 
 const Index = () => {
   const router = useRouter();
