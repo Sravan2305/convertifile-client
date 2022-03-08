@@ -10,7 +10,7 @@ export const Header = () => {
   const [showDrawer, setShowDrawer] = React.useState(false);
   return (
     <>
-      <nav className="flex fixed inset-x-0 justify-between items-center pr-6 bg-white s:h-20 xl:hidden">
+      <nav className="flex fixed inset-x-0 z-50 justify-between items-center pr-6 bg-white s:h-20 xl:hidden">
         <Link href={'/'} passHref>
           <Image
             onClick={() => window.scroll(0, 0)}
@@ -44,7 +44,7 @@ export const Header = () => {
           </Link>
         </Drawer>
       }
-      <nav className="flex fixed inset-x-0 top-0 justify-between items-center px-16 h-20 bg-white s:hidden nav">
+      <nav className="flex fixed inset-x-0 top-0 z-50 justify-between items-center px-16 h-20 bg-white s:hidden nav">
         <ul className="flex text-black">
           <Link href={'/'} passHref>
             <Image

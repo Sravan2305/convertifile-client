@@ -141,3 +141,12 @@ a:hover {
   max-height: 18px;
   display: inline-block;
 }
+
+
+footer{
+}
+
+.brand_name{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

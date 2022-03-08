@@ -115,7 +115,7 @@ export const FileSection = ({
               : 'hover:bg-teal  hover:text-white'
           } ${
             (!format.to || !format.from || !filesData || !filesData.length) &&
-            'bg-gray-300 text-gray-700 hover:bg-gray-300 hover:text-gray-700 cursor-not-allowed '
+            'bg-gray-300 text-gray-500 hover:bg-gray-300 hover:text-gray-700 cursor-not-allowed '
           }`}
         >
           {magicInProgress ? (

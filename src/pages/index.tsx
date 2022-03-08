@@ -9,7 +9,7 @@ const Index = () => {
   const router = useRouter();
 
   return (
-    <main className="flex-col center-block">
+    <main className="overflow-x-hidden flex-col center-block">
       <Hero />
       <WhyUs />
       <Convert />
