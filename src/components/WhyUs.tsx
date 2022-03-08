@@ -6,7 +6,7 @@ import { Delete } from '@/SVG/Delete';
 import { FIleConversion } from '@/SVG/FIleConversion';
 import { Friendly } from '@/SVG/Friendly';
 import { NewFeatures } from '@/SVG/NewFeatures';
-import { Quality } from '@/SVG/quality';
+import { Quality } from '@/SVG/QualitySVG';
 import { Request } from '@/SVG/Request';
 
 export function FeatureCard({
