@@ -82,7 +82,7 @@ export const FileSection = ({
       <div className="flex-1 text-blue border-4 border-blue border-dashed s:w-full s:h-24 xl:h-64 center-block">
         <label
           htmlFor="file-upload"
-          className="flex justify-center items-center py-2 w-full h-full text-lg font-bold bg-white shadow-sm s:justify-center s:w-full s:text-md"
+          className="flex justify-center items-center py-2 w-full h-full text-lg font-bold bg-white shadow-sm s:justify-center s:w-full s:text-sm"
         >
           <UploadSVG /> Upload (Max: {maxFileCount} files)
         </label>

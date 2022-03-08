@@ -67,15 +67,16 @@ export const SelectFormat = ({
                 )}
               </div>
             ) : (
-              Object.keys(formats).map((ext) => (
-                <button
-                  key={ext}
-                  className={`format ${format.from === ext && 'format-active'}`}
-                  onClick={() => setFormat({ to: '', from: ext })}
-                >
-                  {ext}
-                </button>
-              ))
+              //   Object.keys(formats).map((ext) => (
+              //     <button
+              //       key={ext}
+              //       className={`format ${format.from === ext && 'format-active'}`}
+              //       onClick={() => setFormat({ to: '', from: ext })}
+              //     >
+              //       {ext}
+              //     </button>
+              //   ))
+              false
             )}
           </section>
         </div>
