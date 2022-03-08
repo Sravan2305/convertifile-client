@@ -1,21 +1,142 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700;
+  @apply text-blue;
 }
 
 a:hover {
-  @apply border-b-2 border-blue-700;
+  @apply border-b-2 border-blue;
 }
 
 @tailwind components;
 
 @tailwind utilities;
+@import '~antd/dist/antd.css';
 
-.content p {
-  @apply my-6;
+* {
+  scroll-behavior: smooth;
+}
+.nav ul li {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  letter-spacing: 0.008rem;
+  cursor: pointer;
 }
 
-.content ul {
-  @apply my-6;
+.underline {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-top: 1.6em;
+  transition: all 0.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+.underline:hover {
+  color: #01949a;
+  opacity: 0.75;
+  /* transform: scale(1.1); */
+}
+.underline:hover:after {
+  opacity: 0;
+  transform: scale(0, 1);
+}
+.underline:active {
+  color: #01949a;
+  opacity: 0.75;
+  transform: scale(0.9);
+}
+
+.center-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  background: url('../../public//assets//images/ct.png');
+  background-color: rgba(1, 148, 154, 0.6);
+  background-position: 50% 50%;
+  background-size: 1440px;
+  background-repeat: no-repeat;
+}
+
+.button-scale {
+  transition: all 0.3s ease-in-out;
+}
+.button-scale:active {
+  transform: scale(0.8);
+}
+.button-scale:hover {
+  font-size: 24px;
+}
+
+* {
+  scroll-padding-top: 225px;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.format {
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid #004369;
+  border-radius: 20px;
+  padding: 5px 15px;
+  color: #004369;
+  margin-left: 14px;
+  transition: all ease-in-out 50ms;
+  margin-bottom: 14px;
+}
+.format:active{
+    transform: scale(0.9);
+}
+.format:hover {
+  background: #01949a;
+  color: white;
+}
+.format-active , .format-active:hover {
+  background: #004369;
+  color: white;
+}
+
+.format-disabled , .format-disabled:hover {
+  background: white;
+  color: #697177;
+  cursor: not-allowed;
+  border: 3px solid rgb(199, 184, 184);
+  transform: none;
+}
+
+.to-format{
+    animation: to-format-animation 1s ease-in-out 50ms;
+
+}
+@keyframes to-format-animation {
+    0%{
+        transform: scale(0) translateX(-400%);
+    }
+    100%{
+        transform: scale(1) translateX(0);
+    }
+}
+
+.svg{
+    max-width: 18px;
+    max-height: 18px;
+    display: inline-block;
 }
