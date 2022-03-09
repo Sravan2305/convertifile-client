@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useState } from 'react';
 
-import { Spin } from 'antd';
+import { Spin, notification } from 'antd';
 
 import { Attachment } from '@/SVG/Attachment';
 import { UploadSVG } from '@/SVG/UploadSVG';
@@ -58,6 +58,7 @@ export const FileSection = ({
       },
     )
       .then((response) => {
+        if (response.status !== 200) throw new Error(response.statusText);
         const fileName =
           response.headers.get('content-disposition')?.split('filename=')[1] ??
           '';
@@ -69,10 +70,16 @@ export const FileSection = ({
           link.setAttribute('download', fileName);
           document.body.appendChild(link);
           link.click();
+          setMagicInProgress(false);
         });
-        setMagicInProgress(false);
       })
       .catch(() => {
+        notification.open({
+          message: 'Oops ! Conversion Failed',
+          description: `Almost 99.9% of user requests succeed. However, the following file conversion from ${format.from} to ${format.to} failed. Please try again.`,
+          className: 'bg-white text-red font-bold',
+          duration: 20,
+        });
         setMagicInProgress(false);
       });
   }, 3000);

@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="-mt-2">
           <Wave />
         </div>
-        <div className="absolute top-20 right-8 text-lg font-bold text-blue s:top-6">
+        <div className="absolute top-24 right-8 text-lg font-bold text-blue s:top-6">
           <div className="flex flex-col justify-center items-end">
             <p className="mb-2"> Connect Me:</p>
             <Linkedin
