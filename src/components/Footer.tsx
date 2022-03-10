@@ -1,16 +1,12 @@
 import React from 'react';
 
 import { Linkedin } from '@/SVG/Linkedin';
-import { Wave } from '@/SVG/Wave';
 
 export const Footer = () => {
   return (
     <>
       <footer id="support" className="relative w-full h-48">
-        <div className="-mt-2">
-          <Wave />
-        </div>
-        <div className="absolute top-24 right-8 text-lg font-bold text-blue s:top-6">
+        <div className=" top-24 right-8 text-lg font-bold text-blue s:top-6">
           <div className="flex flex-col justify-center items-end">
             <p className="mb-2"> Connect Me:</p>
             <Linkedin
@@ -23,7 +19,7 @@ export const Footer = () => {
             />
           </div>
         </div>
-        <div className="absolute top-48 right-8 s:top-20 s:mt-6">
+        <div className=" top-48 right-8 s:top-20 s:mt-6">
           <div className="flex flex-col justify-center items-end">
             <p className="mb-2 text-lg font-bold text-blue"> Support:</p>
             <p className="text-md">
@@ -63,7 +59,6 @@ export const Footer = () => {
           </span>{' '}
           if you like this project.
         </div>
-        <div className=" h-12 bg-blue"></div>
       </footer>
     </>
   );

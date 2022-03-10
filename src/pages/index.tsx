@@ -2,7 +2,9 @@
 
 import { Convert } from '@/components/Convert';
 import { Hero } from '@/components/Hero';
+import { SupportForm } from '@/components/SupportForm';
 import { WhyUs } from '@/components/WhyUs';
+import { Wave } from '@/SVG/Wave';
 
 const Index = () => {
   return (
@@ -10,6 +12,8 @@ const Index = () => {
       <Hero />
       <WhyUs />
       <Convert />
+      <Wave />
+      <SupportForm />
     </main>
   );
 };
