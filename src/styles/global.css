@@ -2,13 +2,13 @@
 
 @tailwind base;
 
-a {
+/* a {
   @apply text-blue;
 }
 
 a:hover {
   @apply border-b-2 border-blue;
-}
+} */
 
 @tailwind components;
 

@@ -2,13 +2,13 @@ import React from 'react';
 
 const FormSVG = () => {
   return (
-    <div className="flex flex-col justify-between w-1/2">
+    <div className="flex flex-col justify-between w-1/2 s:w-full ">
       <div>
         <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
           Talk to Us
         </h2>
         <div className="mt-8 text-gray-700">
-          drop a message at{' '}
+          Drop a message at{' '}
           <span className="text-sm text-blue underline text-bold">
             <a
               href="mailto:convertifile@gmail.com"
